@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 15px;
+}
+
+.card{
+    width: 300px;
+    height: auto;
+    padding: 25px;
+    margin: 15px;
+    border: 1px #000 solid;
+    border-radius: 8px;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    0%{
+        opacity: 0.1;
+        transform: translate3d(-100%, 0, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.show{
+    -webkit-animation: slideInLeft 0.6s ease-in-out 0.1s forwards;
+    animation: slideInLeft 0.6s ease-in-out 0.1s forwards;
+}
+
